@@ -89,8 +89,4 @@ public class Attendance {
 		this.adminName = adminName;
 	}
 
-
-
-
-
 }
