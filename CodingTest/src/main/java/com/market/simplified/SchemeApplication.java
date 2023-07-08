@@ -11,7 +11,7 @@ public class SchemeApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SchemeApplication.class, args);
 	}
-
+//This line added by saranya
 	@Bean
 	public RestTemplate getRestTemplate(){
 		return new RestTemplate();
