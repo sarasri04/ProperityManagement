@@ -31,7 +31,7 @@ public class CodingTestSchemeController {
     CodingTestSchemeServiceImpl codingTestSchemeServiceImpl;
     
 	
-    
+   //new line added 
     private static Logger logger = LoggerFactory.getLogger(CodingTestSchemeController.class);
     
     
