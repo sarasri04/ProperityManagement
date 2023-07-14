@@ -15,5 +15,11 @@ public class loginController {
         return "login";
     }
 
+	@GetMapping("/registerPage")
+    public String registerPage(Model model) {
+        model.addAttribute("appName", appName);
+        return "registerPage";
+    }
+	
 	}
 
