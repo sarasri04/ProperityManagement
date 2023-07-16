@@ -29,6 +29,39 @@ public class UserloginEntity {
 	
 	@Column(name="DECLINATION")
 	private String declination;
+	
+	@Column(name="MOBILENUMBER")
+	private String mobileNumber;
+	
+	@Column(name="EMAILID")
+	private String emailId;
+	
+	@Column(name="ROLE")
+	private String role;
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
+
+	public String getMobileNumber() {
+		return mobileNumber;
+	}
+
+	public void setMobileNumber(String mobileNumber) {
+		this.mobileNumber = mobileNumber;
+	}
+
+	public String getEmailId() {
+		return emailId;
+	}
+
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
 
 	public Integer getUserId() {
 		return userId;
