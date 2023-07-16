@@ -4,8 +4,9 @@ package com.market.simplified.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 
-
+import com.market.simplified.entity.model.UserloginReqest;
 import com.market.simplified.repositoryImpl.UserloginRepo;
 
 @Service
@@ -27,6 +28,12 @@ public class UserloginService {
 		return response;
 		
 	}
+	
+	public String addRegister(UserloginReqest userloginReqest) {
+		userloginRepo.save(userloginReqest);
+		return "success";
+	}
+
 
 
 	

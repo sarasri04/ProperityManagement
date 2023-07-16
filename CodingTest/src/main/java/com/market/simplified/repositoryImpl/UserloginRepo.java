@@ -7,9 +7,11 @@ import org.springframework.stereotype.Repository;
 import com.market.simplified.entity.UserloginEntity;
 
 @Repository
-public interface UserloginRepo extends JpaRepository<UserloginEntity, Integer> {
+public interface UserloginRepo extends JpaRepository<UserloginEntity, Long> {
 	//SELECT * FROM userLogin where userName='SARNYA' AND password='sara123';
 	@Query(value="SELECT * FROM userLogin where userName=? AND password=?",nativeQuery = true)
 	public String getUser(String userName,String password);
+
+	//public void save(String mobileNumber, String emailId);
 
 }
