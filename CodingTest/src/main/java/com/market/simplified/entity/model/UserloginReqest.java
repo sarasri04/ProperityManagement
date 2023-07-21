@@ -1,6 +1,14 @@
 package com.market.simplified.entity.model;
 
 public class UserloginReqest {
+	
+// {
+//		"userName": "sara",
+//		"password": "sri",
+//		"mobileNumber" : "95002787887",
+//		"emailID": "sarasri@gmail.com",
+//		"role": "user/admin"
+//		}
     private String userName;
    
 	private String password;
