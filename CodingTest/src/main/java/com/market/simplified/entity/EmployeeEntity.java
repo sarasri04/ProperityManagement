@@ -33,10 +33,10 @@ public class EmployeeEntity {
 	@Column(name="DOB")
 	private Date dob;
 	
-	@Column(name="EMP EMAIL ID")
+	@Column(name="EMP_EMAIL_ID")
 	private String empemailid;
 	
-	@Column(name="EMP ADDRESS")
+	@Column(name="EMP_ADDRESS")
 	private String empAddress;
 
 	public Integer getEmpId() {

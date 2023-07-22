@@ -53,12 +53,12 @@ public class UserloginService {
 		return "success";
 	}
 	
-	public String addDetaile(EmployeeReqest employeeReqest) {
+	public String addDetails(EmployeeReqest employeeReqest) {
 	
 		EmployeeEntity num = new EmployeeEntity();
 		String dob = employeeReqest.getDob();
 		//SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-		DateFormat inputFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.US);
+		DateFormat inputFormat = new SimpleDateFormat("dd/MM/yyyy");
 		Date date = null;
 		try {
 			//date = sdf.parse(sdf.format(dob));
@@ -72,7 +72,6 @@ public class UserloginService {
 		//LocalDate date = LocalDate.parse(dob, formatter);
 		System.out.println(date); // 2010-01-02
 		
-		num.setEmpId(employeeReqest.getEmpId());
 		num.setEmpName(employeeReqest.getEmpName());
 		num.setDob(date);
 		num.setEmpemailid(employeeReqest.getEmpemailid());

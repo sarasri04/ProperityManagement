@@ -9,7 +9,7 @@ public class EmployeeReqest {
 //		   "empDOB": 10/04/2012 -- date,
 //		   "empAddress":"Thuraiyur"
 //			}
-	private Integer empId;
+	
 	
 	private String empName;
 	
@@ -20,13 +20,7 @@ public class EmployeeReqest {
 	
 	private String empAddress;
 
-	public Integer getEmpId() {
-		return empId;
-	}
-
-	public void setEmpId(Integer empId) {
-		this.empId = empId;
-	}
+	
 
 	public String getEmpName() {
 		return empName;

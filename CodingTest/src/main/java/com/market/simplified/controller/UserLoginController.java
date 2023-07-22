@@ -33,9 +33,9 @@ public class UserLoginController {
 	}
 	
 	
-	@PostMapping(value="/employeeDetaile")
-	public String addDetaile(@RequestBody EmployeeReqest employeeReqest) {
-		return userloginService.addDetaile(employeeReqest); 
+	@PostMapping(value="/employeeDetails")
+	public String addDetails(@RequestBody EmployeeReqest employeeReqest) {
+		return userloginService.addDetails(employeeReqest); 
 	}
 
 	 
